@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Infrastructure\\Api.Infrastructure.csproj": {}
+    "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Infrastructure\\Api.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Application\\Api.Application.csproj": {
+    "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Application\\Api.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Application\\Api.Application.csproj",
+        "projectUniqueName": "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Application\\Api.Application.csproj",
         "projectName": "Api.Application",
-        "projectPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Application\\Api.Application.csproj",
+        "projectPath": "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Application\\Api.Application.csproj",
         "packagesPath": "C:\\Users\\MichalPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Application\\obj\\",
+        "outputPath": "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MichalPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\Api.Core.csproj": {
-                "projectPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\Api.Core.csproj"
+              "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Core\\Api.Core.csproj": {
+                "projectPath": "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Core\\Api.Core.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\Api.Core.csproj": {
+    "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Core\\Api.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\Api.Core.csproj",
+        "projectUniqueName": "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Core\\Api.Core.csproj",
         "projectName": "Api.Core",
-        "projectPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\Api.Core.csproj",
+        "projectPath": "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Core\\Api.Core.csproj",
         "packagesPath": "C:\\Users\\MichalPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\obj\\",
+        "outputPath": "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MichalPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -118,14 +118,14 @@
         }
       }
     },
-    "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Infrastructure\\Api.Infrastructure.csproj": {
+    "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Infrastructure\\Api.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Infrastructure\\Api.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Infrastructure\\Api.Infrastructure.csproj",
         "projectName": "Api.Infrastructure",
-        "projectPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Infrastructure\\Api.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Infrastructure\\Api.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\MichalPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MichalPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -143,8 +143,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Application\\Api.Application.csproj": {
-                "projectPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Application\\Api.Application.csproj"
+              "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Application\\Api.Application.csproj": {
+                "projectPath": "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Application\\Api.Application.csproj"
               }
             }
           }

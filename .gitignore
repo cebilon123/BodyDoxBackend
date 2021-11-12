@@ -1,0 +1,4 @@
+﻿.idea
+Api/obj
+Api.Application/obj
+Api.Application.Tests/obj

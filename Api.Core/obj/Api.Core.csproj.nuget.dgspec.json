@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\Api.Core.csproj": {}
+    "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Core\\Api.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\Api.Core.csproj": {
+    "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Core\\Api.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\Api.Core.csproj",
+        "projectUniqueName": "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Core\\Api.Core.csproj",
         "projectName": "Api.Core",
-        "projectPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\Api.Core.csproj",
+        "projectPath": "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Core\\Api.Core.csproj",
         "packagesPath": "C:\\Users\\MichalPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\obj\\",
+        "outputPath": "C:\\Users\\MichalPC\\Projekty\\BodyDoxBackend\\Api.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MichalPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
