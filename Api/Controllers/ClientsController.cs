@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using Api.Application.Common;
 using Api.Application.Handlers;
 using Api.Application.Handlers.Commands;
+using Api.Application.Handlers.Queries;
+using Api.Application.ResultModels;
 using Api.Attributes;
 using Microsoft.AspNetCore.Mvc;
 
@@ -33,6 +37,18 @@ namespace Api.Controllers
         {
             await _commandDispatcher.SendAsync(command.WithId(clientId));
             return Ok();
+        }
+
+        [HttpGet("{id:guid}")]
+        public async Task<Client> GetById(Guid id)
+        {
+            return await _queryDispatcher.QueryAsync(new GetClientByIdQuery(id));
+        }
+
+        [HttpGet]
+        public async Task<ICollection<Client>> GetClients([FromQuery] Pagination pagination)
+        {
+            return await _queryDispatcher.QueryAsync(new GetClientsQuery(pagination ?? Pagination.Default));
         }
     }
 }

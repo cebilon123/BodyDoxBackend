@@ -20,9 +20,10 @@ namespace Api.Core.Domain
         public DateTime CreatedDate { get; }
         public DateTime? UpdatedDate { get; }
         public DateTime? DeletedDate { get; }
+        public Guid CreatedBy { get; }
 
         public Client(Guid id, string firstName, string lastName, string email, DateTime birthDate, string address,
-            string zipCode, string city, string phoneNumber, DateTime createdDate, Gender gender = Gender.None,
+            string zipCode, string city, string phoneNumber, DateTime createdDate, Guid createdBy, Gender gender = Gender.None,
             Guid? avatarGuid = null, DateTime? updatedDate = null, DateTime? deletedDate = null)
         {
             if (string.IsNullOrEmpty(firstName))
@@ -45,6 +46,7 @@ namespace Api.Core.Domain
             CreatedDate = createdDate;
             UpdatedDate = updatedDate;
             DeletedDate = deletedDate;
+            CreatedBy = createdBy;
         }
     }
 }

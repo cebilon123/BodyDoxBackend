@@ -1,11 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using Api.Core.Domain;
+﻿using Api.Core.Domain;
 using Api.Core.ValueTypes;
 using Api.Infrastructure.Repositories.Documents;
-using MongoDB.Driver.GeoJsonObjectModel;
-using Image = Api.Core.ValueTypes.Image;
 
 namespace Api.Infrastructure.Repositories
 {
@@ -64,6 +59,7 @@ namespace Api.Infrastructure.Repositories
                 LastName = client.LastName,
                 PhoneNumber = client.PhoneNumber,
                 ZipCode = client.ZipCode,
+                CreatedBy = client.CreatedBy,
                 CreatedDate = client.CreatedDate,
                 DeletedDate = client.DeletedDate,
                 UpdatedDate = client.UpdatedDate
@@ -74,6 +70,7 @@ namespace Api.Infrastructure.Repositories
                 ? null
                 : new Client(document.Id, document.FirstName, document.LastName, document.Email, document.BirthDate,
                     document.Address, document.ZipCode, document.City, document.PhoneNumber, document.CreatedDate,
-                    document.Gender, document.AvatarGuid, document.UpdatedDate, document.DeletedDate);
+                    document.CreatedBy, document.Gender, document.AvatarGuid, document.UpdatedDate,
+                    document.DeletedDate);
     }
 }

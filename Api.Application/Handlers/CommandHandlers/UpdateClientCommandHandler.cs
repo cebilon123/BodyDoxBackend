@@ -34,7 +34,8 @@ namespace Api.Application.Handlers.CommandHandlers
                 command.City, 
                 command.PhoneNumber,
                 client.CreatedDate, 
-                command.Gender, 
+                client.CreatedBy,
+                command.Gender,
                 null, 
                 DateTime.Now.ToUniversalTime());
 
