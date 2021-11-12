@@ -1,0 +1,122 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Application\\Api.Application.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Application\\Api.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Application\\Api.Application.csproj",
+        "projectName": "Api.Application",
+        "projectPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Application\\Api.Application.csproj",
+        "packagesPath": "C:\\Users\\MichalPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MichalPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/storefeeder/auth/6b51b62c-3af3-48aa-8819-a0b9990b1e13/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\Api.Core.csproj": {
+                "projectPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\Api.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\Api.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\Api.Core.csproj",
+        "projectName": "Api.Core",
+        "projectPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\Api.Core.csproj",
+        "packagesPath": "C:\\Users\\MichalPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MichalPC\\Projekty\\backend\\Api\\Api.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MichalPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/storefeeder/auth/6b51b62c-3af3-48aa-8819-a0b9990b1e13/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
