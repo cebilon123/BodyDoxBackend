@@ -49,49 +49,5 @@ namespace Api.Infrastructure.Repositories
                 : new UserSession(document.Id, document.UserId, document.CreatedAt, document.Token,
                     document.RefreshToken);
         }
-
-        public static Image AsEntity(this Documents.Image image)
-        {
-            return new(image.Url, image.ImageAlt);
-        }
-
-        public static Offer? AsEntity(this OfferDocument? document) =>
-            document == null
-                ? null
-                : new Offer(
-                    document.Id,
-                    document.Images.Select(i => new Image(i.Url, i.ImageAlt)).ToList(),
-                    document.Title,
-                    document.City,
-                    document.Street,
-                    document.Price,
-                    document.Location.Latitude,
-                    document.Location.Longitude,
-                    document.AuthorId,
-                    document.OfferTypes);
-
-        public static ICollection<Offer> AsEntityCollection(this IEnumerable<OfferDocument> documents)
-        {
-            var col = new List<Offer>();
-            foreach (var document in documents) col.Add(document.AsEntity());
-
-            return col;
-        }
-
-        public static OfferDocument AsDocument(this Offer entity)
-        {
-            return new()
-            {
-                Id = entity.Id,
-                AuthorId = entity.AuthorId,
-                City = entity.City,
-                Street = entity.Street,
-                Price = entity.Price,
-                Title = entity.Title,
-                OfferTypes = entity.OfferTypes,
-                Location = new GeoJson2DGeographicCoordinates(entity.Longitude, entity.Latitude),
-                Images = entity.Images.Select(i => new Documents.Image(i.Url, i.ImageAlt)).ToList()
-            };
-        }
     }
 }

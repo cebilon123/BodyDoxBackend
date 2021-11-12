@@ -2,3 +2,11 @@
 Api/obj
 Api.Application/obj
 Api.Application.Tests/obj
+Api/bin
+Api/Logs
+Api.Application/bin
+Api.Application.Tests/bin
+Api.Core/bin
+Api.Core/obj
+Api.Infrastructure/bin
+Api.Infrastructure/obj

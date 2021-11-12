@@ -38,7 +38,9 @@ namespace Api.Infrastructure.Repositories
 
         public async Task UpdateAsync(TEntity entity)
         {
+#pragma warning disable 8602
             await Collection.ReplaceOneAsync(e => e.Id.Equals(entity.Id), entity);
+#pragma warning restore 8602
         }
 
         public async Task UpdateAsync(TEntity entity, Expression<Func<TEntity, bool>> predicate)

@@ -19,4 +19,9 @@
       <ProjectReference Include="..\Api.Infrastructure\Api.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Handlers\Commands" />
+      <Folder Include="Handlers\Queries" />
+    </ItemGroup>
+
 </Project>

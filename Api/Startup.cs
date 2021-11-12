@@ -1,15 +1,11 @@
 using System;
-using Api.Core.Domain;
 using Api.Core.Repositories;
 using Api.Helpers.Swagger;
 using Api.Infrastructure.Auth;
-using Api.Infrastructure.Auth.Models;
 using Api.Infrastructure.Errors;
 using Api.Infrastructure.Initialize;
 using Api.Infrastructure.Repositories;
 using Api.Infrastructure.Repositories.Documents;
-using Api.Infrastructure.Repositories.Files;
-using JWT;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -77,15 +73,14 @@ namespace Api
                 .AddJwtService<JwtService>()
                 .AddRepository<UserDocument, Guid>("users")
                 .AddRepository<UserSessionDocument, Guid>("userSessions")
-                .AddRepository<OfferDocument, Guid>("offers");
+                .AddRepository<ClientDocument, Guid>("clients");
 
             services.AddRequestInfoProvider<RequestInfoProvider>();
 
             services
                 .AddTransient<IUserRepository, UserRepository>()
                 .AddTransient<IUserSessionsRepository, UserSessionRepository>()
-                .AddTransient<IOfferRepository, OfferRepository>()
-                .AddTransient<IImageRepository, ImageRepository>();
+                .AddTransient<IClientRepository, ClientRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -110,11 +105,6 @@ namespace Api
                 Builders<UserSessionDocument>.IndexKeys.Ascending(u => u.CreatedAt), new CreateIndexOptions
                 {
                     ExpireAfter = TimeSpan.FromMinutes(double.Parse(Configuration["sessionTimeMinutes"]))
-                });
-            app.UseIndexOnRepository<OfferDocument, Guid>(
-                Builders<OfferDocument>.IndexKeys.Geo2DSphere(o => o.Location), new CreateIndexOptions
-                {
-                    Background = true
                 });
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }

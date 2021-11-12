@@ -19,7 +19,7 @@ namespace Api.Infrastructure.Repositories
         {
             return services.AddTransient<IMongoGenericRepository<TEntity, TIdentifiable>>(sp =>
             {
-                var database = sp.GetService<IMongoClient>()?.GetDatabase("rent_main");
+                var database = sp.GetService<IMongoClient>()?.GetDatabase("BodyDox");
 
                 if (database is null)
                     throw new InfrastructureException("Database_not_found", typeof(IMongoDatabase));

@@ -9,9 +9,4 @@
       <ProjectReference Include="..\Api.Core\Api.Core.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Attributes" />
-      <Folder Include="Helpers" />
-    </ItemGroup>
-
 </Project>
