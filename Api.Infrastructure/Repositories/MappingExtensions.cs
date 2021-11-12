@@ -49,5 +49,21 @@ namespace Api.Infrastructure.Repositories
                 : new UserSession(document.Id, document.UserId, document.CreatedAt, document.Token,
                     document.RefreshToken);
         }
+
+        public static ClientDocument AsDocument(this Client client)
+            => new ClientDocument()
+            {
+                Id = client.Id,
+                Address = client.Address,
+                City = client.City,
+                Email = client.Email,
+                Gender = client.Gender,
+                AvatarGuid = client.AvatarGuid,
+                BirthDate = client.BirthDate,
+                FirstName = client.FirstName,
+                LastName = client.LastName,
+                PhoneNumber = client.PhoneNumber,
+                ZipCode = client.ZipCode
+            };
     }
 }

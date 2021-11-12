@@ -3,7 +3,7 @@
     public enum Gender
     {
         None,
-        Men,
-        Women
+        Male,
+        Female
     }
 }
