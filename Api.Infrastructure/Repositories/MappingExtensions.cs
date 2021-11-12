@@ -63,7 +63,17 @@ namespace Api.Infrastructure.Repositories
                 FirstName = client.FirstName,
                 LastName = client.LastName,
                 PhoneNumber = client.PhoneNumber,
-                ZipCode = client.ZipCode
+                ZipCode = client.ZipCode,
+                CreatedDate = client.CreatedDate,
+                DeletedDate = client.DeletedDate,
+                UpdatedDate = client.UpdatedDate
             };
+
+        public static Client? AsEntity(this ClientDocument? document)
+            => document == null
+                ? null
+                : new Client(document.Id, document.FirstName, document.LastName, document.Email, document.BirthDate,
+                    document.Address, document.ZipCode, document.City, document.PhoneNumber, document.CreatedDate,
+                    document.Gender, document.AvatarGuid, document.UpdatedDate, document.DeletedDate);
     }
 }

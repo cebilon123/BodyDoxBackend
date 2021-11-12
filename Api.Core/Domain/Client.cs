@@ -16,10 +16,14 @@ namespace Api.Core.Domain
         public string City { get; }
         public string PhoneNumber { get; }
         public Gender Gender { get; }
-        public Guid? AvatarGuid{ get; }
+        public Guid? AvatarGuid { get; }
+        public DateTime CreatedDate { get; }
+        public DateTime? UpdatedDate { get; }
+        public DateTime? DeletedDate { get; }
 
         public Client(Guid id, string firstName, string lastName, string email, DateTime birthDate, string address,
-            string zipCode, string city, string phoneNumber, Gender gender = Gender.None, Guid? avatarGuid = null)
+            string zipCode, string city, string phoneNumber, DateTime createdDate, Gender gender = Gender.None,
+            Guid? avatarGuid = null, DateTime? updatedDate = null, DateTime? deletedDate = null)
         {
             if (string.IsNullOrEmpty(firstName))
                 throw new InvalidFirstNameException(firstName);
@@ -38,6 +42,9 @@ namespace Api.Core.Domain
             PhoneNumber = phoneNumber;
             Gender = gender;
             AvatarGuid = avatarGuid;
+            CreatedDate = createdDate;
+            UpdatedDate = updatedDate;
+            DeletedDate = deletedDate;
         }
     }
 }

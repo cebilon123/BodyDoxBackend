@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Api.Application.Handlers;
 using Api.Application.Handlers.Commands;
 using Api.Attributes;
@@ -24,6 +25,13 @@ namespace Api.Controllers
         public async Task<ActionResult> AddClient(CreateClientCommand clientCommand)
         {
             await _commandDispatcher.SendAsync(clientCommand);
+            return Ok();
+        }
+
+        [HttpPut]
+        public async Task<ActionResult> UpdateClient(UpdateClientCommand command, [FromQuery]Guid clientId)
+        {
+            await _commandDispatcher.SendAsync(command.WithId(clientId));
             return Ok();
         }
     }

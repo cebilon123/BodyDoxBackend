@@ -27,6 +27,7 @@ namespace Api.Application.Handlers.CommandHandlers
                 command.ZipCode,
                 command.City,
                 command.PhoneNumber,
+                DateTime.Now.ToUniversalTime(),
                 command.Gender);
 
             await _clientRepository.InsertClient(client);
