@@ -41,7 +41,7 @@ namespace Api
         }
 
         // base configuration for both environments. 
-        private async void BaseConfiguration(IServiceCollection services)
+        private void BaseConfiguration(IServiceCollection services)
         {
             services.AddLogging(loggingBuilder =>
             {
@@ -73,14 +73,16 @@ namespace Api
                 .AddJwtService<JwtService>()
                 .AddRepository<UserDocument, Guid>("users")
                 .AddRepository<UserSessionDocument, Guid>("userSessions")
-                .AddRepository<ClientDocument, Guid>("clients");
+                .AddRepository<ClientDocument, Guid>("clients")
+                .AddRepository<SessionDocument, Guid>("session");
 
             services.AddRequestInfoProvider<RequestInfoProvider>();
 
             services
                 .AddTransient<IUserRepository, UserRepository>()
                 .AddTransient<IUserSessionsRepository, UserSessionRepository>()
-                .AddTransient<IClientRepository, ClientRepository>();
+                .AddTransient<IClientRepository, ClientRepository>()
+                .AddTransient<ISessionRepository, SessionRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
